@@ -78,8 +78,17 @@ public class GameSession : MonoBehaviour
     }
     void ResetGameSession()
     {
-        FindFirstObjectByType<ScenePersist>().ResetScenePersist();
-        SceneManager.LoadScene(0);
-        Destroy(gameObject);
+        if(SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            FindFirstObjectByType<ScenePersist>().ResetScenePersist();
+            SceneManager.LoadScene(2);
+            Destroy(gameObject);
+        }
+        else
+        {
+            FindFirstObjectByType<ScenePersist>().ResetScenePersist();
+            SceneManager.LoadScene(0);
+            Destroy(gameObject);
+        }
     }
 }
