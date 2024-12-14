@@ -1,0 +1,21 @@
+#HealthBar .unity-progress-bar__background {
+    background-color: rgb(72, 72, 72);
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+#HealthBar .unity-progress-bar__container {
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#HealthBar .unity-progress-bar__progress {
+    background-color: rgb(255, 0, 0);
+}

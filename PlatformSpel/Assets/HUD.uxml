@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/HUD.uss?fileID=7433441132597879392&amp;guid=17a39dfc461e7e04184b679c84deedec&amp;type=3#HUD" />
+    <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="TopContainer" style="flex-grow: 1; flex-direction: row-reverse; align-self: auto; justify-content: center; align-items: stretch;">
+            <ui:VisualElement name="TopRight" style="flex-grow: 1; align-items: flex-start; flex-direction: row-reverse; align-self: auto; justify-content: flex-start;" />
+            <ui:VisualElement name="TopLeft" style="flex-grow: 1; align-items: flex-start;">
+                <ui:ProgressBar value="22" name="HealthBar" style="flex-direction: row; width: 500px; height: 50px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomContainer" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="TopLeft" style="flex-grow: 1;" />
+            <ui:VisualElement name="TopRight" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
